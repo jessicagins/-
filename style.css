@@ -1,0 +1,1351 @@
+/*reset*/	
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+			display: block;
+		}
+		body {
+			line-height: 1;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		blockquote, q {
+			quotes: none;
+		}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+			content: '';
+			content: none;
+		}
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+/*main*/
+	body{
+		/*min-width: 100%;*/
+		position: relative;
+	}
+	body:before{
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 1452px;
+		height: 844px;
+		background: url('images/flour.png') 0 0 no-repeat;
+	}
+	body:after{
+		content: '';
+		position: absolute;
+		right: 0;
+		bottom: 700px;
+		width: 559px;
+		height: 1127px;
+		z-index: 5;
+		background: url('images/2-layers.png') 0 0 no-repeat;
+	}
+	button{
+		cursor: pointer;
+		background: #fff;
+	}
+	button:focus{
+		outline: none;
+
+	}
+	.wrapper{
+		margin: 0 auto;
+		width: 980px;
+	}
+	textarea:focus{
+		outline: none;
+	}
+	input:focus{
+		outline: none;
+	}
+/*font*/
+	@font-face{
+		font-family: 'PF Din Text Comp Pro - Thin';
+		src: url('font/pfdintextcomppro-thin.ttf');
+	}
+	@font-face{
+		font-family: 'PF Din Text Comp Pro';
+		src: url('font/PF Din Text Comp Pro Regular.ttf');
+	}
+	@font-face{
+		font-family: Flow;
+		src: url('Flow.ttf') /*format("truetype")*/;
+		src: url('FlowRegular.woff') /*format('woff')*/;
+		src: url('FlowRegular.eot');
+	}
+/*header*/
+	
+	header{
+		z-index: 10;
+		position: relative;	
+	}
+	.contact{
+		float: left;
+		margin: 12px 0 0 12px;
+	}
+	header>div>div>div{
+		float: right;
+		position: relative;
+		margin: 0 34px 0 36px;
+	}
+	header>div>div>div>a{
+		position: absolute;
+		top: -9px;
+		right: 0;
+		border-radius: 50%;
+		display: block;	
+		padding: 24px;
+		background: #fff;
+	}
+
+	.wrapper ul+form{
+		margin: 11px 17px 0 0 ;
+		float: right;
+	}
+	header>div>div:after{
+		content: "";
+		clear: both;
+		display: block;
+	}
+	.contact li{
+		color: #959595;
+		font-family: "PF Din Text Comp Pro - Thin";
+		font-size: 18px;
+		font-weight: 400;
+		letter-spacing: 0px;
+  		padding-left: 36px;
+    	padding-top: 12px;
+		display: block;
+		position: relative;
+	}
+	.contact li+li{
+		letter-spacing: 0.4px;
+		padding-top: 7px;
+		margin-top: 3px; 
+	}
+	.contact li:before{
+		content: "";
+		position: absolute;
+		width: 35px;
+		height: 35px;
+		top: 0;
+		left: 0;
+		background: url('images/sprites.png') 0 0px;
+	}
+	.contact li+li:before{
+		background: url('images/sprites.png') no-repeat 0 -31px;
+	}
+	input[type="search"]{
+		border: 0;
+		border-bottom: #65baaf solid 1px;
+		color: #959595;
+		font-family: "PF Din Text Comp Pro - Thin";
+		font-size: 18px;
+		font-weight: 400;
+		vertical-align: top;
+		padding-top: 4px;
+		width: 190px;
+	}
+	input[type="search"]:focus{
+		outline: none;
+	}
+	.wrapper ul+form>button{
+		border: 0;
+		width: 34px;
+		height: 34px;
+		border-radius: 50%;
+		background: url('images/sprites.png') 0 -128px;
+	}
+	nav{
+		margin: 36px 0 16px 0;
+	}
+	nav:after{
+		content: '';
+		clear: both;
+		display: block;
+	}
+	/*nav>ul:after{
+		content: "";
+		clear: both;
+		display: block;
+	}*/
+	nav ul{
+		float: left;
+	}
+	nav ul+ul{
+		float: right;
+	}
+	nav ul li{
+		display: inline-block;
+	}
+	nav>ul li>a{
+		display: block;
+		padding: 0px 4px 0 19px;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #000;
+		font-family: "PF Din Text Comp Pro - Thin";
+		font-size: 17px;
+		font-weight: 400;
+		letter-spacing: 1px;
+	}
+	nav>ul li+li+li+li+li{
+		float: right;
+
+	}
+	
+	
+	nav>ul>li:nth-child(5)>a{
+		
+		padding-right: 21px;
+	}
+	
+	.wrapper .label img{
+		margin-top: 30px;
+	}
+	.lang{
+		float: right;
+		font-size: 0;
+		margin-right: 12px;
+
+	}
+	header .lang li{
+		text-transform: uppercase;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.lang .active {
+		position: relative;
+	}
+	
+	.lang li>a{
+		display: block;
+		padding: 23px 9px 0 9px;
+	}
+	.lang .active a{
+		background-color: #65baaf;
+	}
+	.lang .active:before{
+		content: "";
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		border-top: 9px #65baaf solid;
+		border-left:solid #65baaf 16px;
+		border-right:solid #65baaf 16px;
+		border-bottom: solid transparent 7px;
+	}
+	
+	.lang  a:link{
+		color: #959595;
+		font-family: "PF Din Text Comp Pro";
+		font-size: 14px;
+		text-decoration: none;
+		font-weight: 500;
+	}
+	.lang .active a:link{
+		color: #fff;
+	}
+	
+	.lang a:visited{
+		color: #959595;
+	}
+	.lang .active a:visited{
+		color: #fff;
+	 }
+/*slider*/
+	.slider{	
+		background: white url('images/chocolate.png') no-repeat center/cover;
+		text-align: center;
+		position: relative;
+		z-index: 5;
+		padding: 60px 0 34px 0;
+	}
+	.slider:after{
+		content: "";
+		left: 0;
+		position: absolute;
+		top:70px;
+		width: 94px;
+		height: 56px;
+		background: url('images/sprites.png') 0 -165px;
+	}
+	
+	.slider:before{
+		content: '';
+	/*	padding-top: 60px;*/
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: rgba(1,1,1,.4);
+	}
+	.slider h3{
+		color: #ffffff;
+		position: relative;
+		letter-spacing: 0.43px;
+		font-family: "PF Din Text Comp Pro - Thin";
+		font-size: 20px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	.slider h2{
+		margin:81px 0 0 0;
+		color: #ffffff;
+		font-family: "PF Din Text Comp Pro";
+		font-size: 72px;
+		font-weight: 500;
+		position: relative;
+		text-transform: uppercase;
+		letter-spacing: 10px;
+	}
+	.slider p{
+		margin: 0 auto;
+		margin-top: 41px;
+		width: 823px;
+		position: relative;
+		color: #ffffff;
+		font-family: Flow;
+		font-size: 32px;
+		font-weight: 400;
+		line-height: 35.94px;
+	}
+	.slider ul{
+		font-size: 0;
+		margin-top: 177px;
+		position: relative;
+	}
+	.slider li{
+		vertical-align: bottom;
+		display: inline-block;
+	}
+	.slider a{
+		display: block;
+		width: 25px;
+		height: 30px;
+		background: url('images/sprites.png') 0 -295px;
+		margin: 0 13px 0 0;
+	}
+	.slider .active a{
+		width: 37px;
+		height: 37px;
+		background: url('images/sprites.png') 0 -329px;
+	}
+/*welcome*/
+	.wlcm>div{
+		display: inline-block;
+		text-align: center;
+		vertical-align: top;	
+	}
+	
+	.wlcm>img{
+		vertical-align: top;
+		margin: 63px 58px -28px -124px;
+
+	}
+	.wlcm>div+img{
+		margin: 27px -40px 30px 91px;
+	}
+	.wlcm>div{
+		margin-bottom: 92px;
+	}
+	.wlcm p{
+		margin: 0 auto;
+		padding: 33px 0 43px 0;
+		color: #959595;
+		font-family: "PF Din Text Comp Pro - Thin";
+		font-size: 36px;
+		font-weight: 400;
+		line-height: 40px;
+		width: 400px;
+	}
+/*products*/
+	.prdct{
+		border-top: rgb(125,125,125,.39) solid 1px;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 0;
+		
+	}
+	.prdct .book{
+		margin:0 0 75px -62px;
+	}
+	.prdct h2{
+		color: #65baaf;
+		font-family: Flow;
+		font-size: 40px;
+		font-weight: 700;
+		padding: 52px 0 22px 0;
+		text-transform: uppercase;
+		text-align: center;
+		position: relative;
+	}
+	.prdct h2:after{
+		content: "";
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		transform: translate(-50%,50%);
+		background: url('images/sprites.png') 0 -240px;
+		width: 44px;
+		height: 44px;
+	}
+	.prdct h2:before{
+		content: "";
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		transform: translate(-50%, 50%);
+		width: 90px;
+		height: 90px;
+		background: #fff;
+	}
+	
+	.prdct>.book>div{
+		position: relative;
+		background: url('images/book.png') 0 0 no-repeat;
+		font-size: 0;
+		margin-top: -20px;
+		padding: 0 130px 50px 126px;
+		z-index: 10;
+	
+	}
+
+	.prdct>.book>div>div{
+		display: inline-block;
+		text-align: center;
+		
+		vertical-align: top;
+
+	}
+	.prdct>.book>div>div>a:link{
+		opacity: 0.7;
+		color: #8f5926;
+		font-family: "PF Din Text Comp Pro";
+		font-size: 18px;
+		font-weight: 500;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	.prdct>.book>div>div>a:visited{
+		opacity: 0.7;
+		color: #8f5926;
+		font-family: "PF Din Text Comp Pro";
+		font-size: 18px;
+		font-weight: 500;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	.prdct h3{
+		color: #caa977;
+		font-family: "PF Din Text Comp Pro";
+		font-size: 36px;
+		font-weight: 500;
+		line-height: 158.89px;
+		text-transform: uppercase;
+		position: relative;
+	}
+	.prdct h3:before{
+		content: "";
+		position: absolute;
+		bottom: 30px;
+		left: 50%;
+		background-color: #65baaf;
+		width: 4px;
+		height: 7px;
+		transform: skewX(45deg) translateX(-21px);
+		
+		box-shadow: 15px 0 #65baaf, 30px 0 #65baaf;
+	}
+	.prdct h3:after{
+		content: "";
+		position: absolute;
+		bottom: 30px;
+		left: 50%;
+		background-color: #65baaf;
+		width: 4px;
+		height: 7px;
+		transform: skewX(-45deg) translateX(-13px);
+		box-shadow: 15px 0 #65baaf, 29px 0 #65baaf;
+		
+	}
+	.prdct .book h4{
+		color: #7d7d7d;
+		font-family: "PF Din Text Comp Pro - Thin";
+		font-size: 20px;
+		font-weight: 400;
+		margin-bottom: 30px;
+	}
+	
+	.prdct p{
+		color: #7d7d7d;
+		font-family: "PF Din Text Comp Pro - Thin";
+		font-size: 20px;
+		font-weight: 400;
+		width: 220px;
+		line-height: 26px;
+	}
+	.prdct .left{
+		width: 250px;
+		line-height: 33px;
+		margin: 58px 37px 0 0;
+		text-transform: uppercase;
+	}	
+	
+	
+	.prdct>div{
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.prdct ul{
+		font-size: 0;
+		position: relative;
+		z-index: 5;
+	}
+	.prdct>div>ul li{
+		display: inline-block;
+		vertical-align: top;
+		background: url('images/sprites.png') -275px 0;
+		margin-left: 20px;
+	}
+	.prdct>div>ul li+li+li{
+		background: url('images/sprites.png') -440px 0;
+	}
+	.prdct>div>ul> .active{
+		background: url('images/sprites.png') -110px -20px;
+		margin: 20px 0 0 48px;
+	}
+	.prdct>div>ul li a{
+		display: block;
+		padding: 15px 37px;
+		color: #ffffff;
+		font-family: "PF Din Text Comp Pro - Thin";
+		font-size: 20px;
+		font-weight: 400;
+		margin-top: 40px;
+		text-decoration: none;
+	}
+	.prdct>div>ul li+li a{
+			padding-top:10px;
+	}
+	
+	.prdct>div>ul li+li+li a{
+		
+		padding: 10px 70px 20px 20px;
+	}
+	.prdct>div>ul .active a {
+		padding: 20px 20px;
+		margin: 0;
+		color: #ffffff;
+		font-family: "PF Din Text Comp Pro";
+		font-size: 17px;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	.prdct .nav li{
+		display: inline-block;
+		font-family: "PF Din Text Comp Pro";
+		font-size: 16px;
+		font-weight: 500;
+		margin: 57px 10px 0 10px ;
+		text-transform: uppercase;
+		
+	}
+	.prdct .nav .active a:link{
+		color: #65baaf;
+	}
+	.prdct .nav .active a:visited{
+		color: #65baaf;
+	}
+	.prdct .nav a:link{
+		color: #caa977;
+	}
+	.prdct .nav a:visited{
+		color: #caa977;
+	}
+	.prdct .nav a{
+		display: block;
+		position: relative;
+		padding: 10px;
+		text-decoration: none;
+	}
+	.prdct .nav li:first-child a{
+		padding-right: 35px;
+
+	}
+
+	.prdct .nav li:first-child a:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 32px;
+		height: 32px;
+		background: url('images/sprites.png') 0 -416px;
+	}
+	.prdct .active>a{
+		padding-left: 35px;
+	}
+	.prdct .nav li+li a:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 32px;
+		height: 32px;
+		background: url('images/sprites.png') -47px -416px;
+	}
+	
+	.prdct .new h4{
+		color: #65baaf;
+		font-family: "PF Din Text Comp Pro";
+		font-size: 24px;
+		font-weight: 500;
+		
+	}
+	.prdct .new p{
+		color: #7d7d7d;
+		font-family: "PF Din Text Comp Pro - Thin";
+		font-size: 18px;
+		font-weight: 400;
+		margin-bottom: 58px;
+	}
+	.prdct .new{
+		position: relative;
+		margin-left: 42px;
+	}
+	.prdct .new div{
+		position: absolute;
+		right: 100%;
+		top: 50%; 
+		
+	}
+	.prdct .new img+div{
+		left: 100%;
+		top: 50%; 
+	}
+	.prdct .new div a{
+		display: block;
+		width: 17px;
+		height: 4px;
+		background: #7d7d7d;
+		opacity: 0.7;
+		position: relative;
+		border-radius: 2px;
+	}
+	.prdct .new div:first-child a:before{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 15px;
+		height: 4px;
+		background: #7d7d7d;
+		transform: rotate(45deg);
+		transform-origin: 0 0;
+		border-radius: 2px;
+	}
+	.prdct .new div:first-child a:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 15px;
+		height: 4px;
+		background: #7d7d7d;
+		transform: rotate(-45deg);
+		transform-origin: 0 4px;
+		border-radius: 2px;
+	}
+	
+	.prdct .new img+div a:before{
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 15px;
+		height: 4px;
+		background: #7d7d7d;
+		transform: rotate(45deg);
+		transform-origin: 100% 4px;
+		border-radius: 2px;
+	}
+	.prdct .new img+div a:after{
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 15px;
+		height: 4px;
+		background: #7d7d7d;
+		transform: rotate(-45deg);
+		transform-origin: 100% 0px;
+		border-radius: 2px;
+	}
+/*contain*/
+	.contain{
+		position: relative;
+		z-index: 10;
+		text-align: center;
+
+	}
+	.contain .pro{
+		background: rgba(178,220,215,.3);
+	}
+	.contain>.pro>h2{
+		color: #65baaf;
+		font-family: Flow;
+		font-size: 40px;
+		font-weight: 700;
+		padding: 62px 0 53px 0;
+		text-transform: uppercase;
+		position: relative;
+	}
+	.contain>.pro h2:after{
+		content: "";
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		transform: translate(-50%,50%);
+		background: url('images/sprites.png') -276px -257px;
+		width: 74px;
+		height: 74px;
+	}
+	.contain>.pro h2:before{
+		content: "";
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		transform: translate(-50%, 50%);
+		width: 70px;
+		height: 70px;
+		background: #fff;
+		border-radius: 50%;
+	}
+	.contain .pro ul{
+		font-size: 0;
+	
+	}
+	.contain .pro li{
+		display: inline-block;
+		color: #915b27;
+		font-family: "PF Din Text Comp Pro - Thin";
+		font-size: 20px;
+		font-weight: 400;
+		width: 130px;
+		vertical-align: top;
+		line-height: 22px;
+		position: relative;
+		margin:0 114px 56px 0 ;
+		padding-top: 149px;
+	}
+	.contain .pro li:last-child{
+		margin-right: 0;
+	}
+	.contain .pro li+li{
+		width: 85px;
+	}
+	.contain .pro li+li+li{
+		width: 220px;
+	}
+	.contain .pro li+li+li+li{
+		width: 115px;
+	}
+	.contain .pro li:before{
+		content: '';
+		position: absolute;
+		bottom: 65px;
+		left: 50%;
+		transform:translateX(-50%);
+		width: 118px;
+		height: 118px;
+		background: url('images/sprites.png') -100px -795px;
+	}
+	.contain .pro li+li:before{
+		background: url('images/sprites.png') -228px -795px;
+	}
+	.contain .pro li+li+li:before{
+		background: url('images/sprites.png') -358px -795px;
+	}
+	.contain .pro li+li+li+li:before{
+		background: url('images/sprites.png') -488px -795px;
+	}
+	.contain .pro+div{
+		text-align: center;
+		padding-bottom: 88px;
+		border-bottom: solid #cccccc 1px;
+	}
+	.contain .pro+div h2{
+		color: #65baaf;
+		font-family: Flow;
+		font-size: 40px;
+		font-weight: 700;
+		padding: 54px 0 40px 0;
+		text-transform: uppercase;
+		position: relative;
+	}
+	.contain .pro+div h2:before{
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		background: url('images/sprites.png') -44px -294px;
+		width: 206px;
+		height: 24px;
+	}
+	.contain .pro+div p{
+
+		color: #7d7d7d;
+		font-family: "PF Din Text Comp Pro - Thin";
+		font-size: 24px;
+		font-weight: 400;
+		margin: 64px auto 47px auto;
+		line-height: 32px;
+		width: 572px;
+	}
+	.contain .pro+div>div{
+		background: url('images/cover.png') no-repeat;
+		width: 500px;
+		margin:0 auto;
+		padding: 35px 45px;
+	}
+	.contain>div+div+div{
+		position: relative;
+		font-size: 0;
+		margin:0 auto;
+
+	}
+
+	.contain div+div+div h2:before{
+		content: '';
+		position: absolute;		
+		bottom: 100%;
+		left: 50%;
+		transform: translate(-50%,50%);
+		width: 85px;
+		height: 85px;
+		background: #fff;
+		border-radius: 50%;
+	}
+	.contain div+div+div h2:after{
+		content: '';
+		position: absolute;		
+		bottom: 100%;
+		left: 50%;
+		transform: translate(-50%,50%);
+		width: 50px;
+		height: 50px;
+		background: url('images/sprites.png') -287px -207px;
+		
+	}
+
+
+	.contain div+div+div h2{
+		color: #67bbaf;
+		font-family: Flow;
+		font-size: 40px;
+		font-weight: 700;
+		padding: 59px 0 75px 0;
+		text-transform: uppercase;
+	}
+	.contain button{
+		color: #b1b1b1;
+		font-family: "PF Din Text Comp Pro";
+		font-size: 16px;
+		font-weight: 500;
+		text-transform: uppercase;
+		border-radius: 20px;
+		padding: 9px 27px;
+		margin: 32px 0 59px 0;
+	}
+	.contain .pro+div+div>div>div{
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+		
+	}
+	.contain .pro+div+div>div>div>div{
+		display: inline-block;
+		vertical-align: top;
+		margin:0 82px 0 20px;
+	}
+	.contain .pro+div+div>div p{
+		color: #7d7d7d;
+		font-family: "PF Din Text Comp Pro - Thin";
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 22px;
+		width: 248px;
+		margin-top: 10px;
+
+	}
+	.contain .pro+div+div>div a{
+		text-decoration: none;
+		font-family: "PF Din Text Comp Pro";
+		font-size: 22px;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+	.contain .pro+div+div>div a:link{
+		color: #caa977;
+	}
+	.contain .pro+div+div>div a:visited{
+		color: #caa977;
+	}
+	.contain .pro+div+div div+img+div p{
+		width: 350px;
+
+	}
+	.contain .pro+div+div>div div+img+div{
+		margin:0 0 0 20px;
+	}
+/*map*/
+	.map{
+		position: relative;
+	
+		/*background: url('images/map.png') center no-repeat/cover;*/
+		height: 508px;
+	}
+	.map #map{
+		height: 100%
+	}
+	.map>div{
+		position: relative;
+		height: 600px;
+	}
+	.map .wrapper{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.map form{
+		text-align: center;
+		height: 508px;
+		/*top: 0;
+		bottom: 0;
+		left: 200px;*/
+		background: #67bbaf;
+		width: 340px;
+	}
+	.map form h2{
+		color: #fff;
+		font-family: "PF Din Text Comp Pro - Thin";
+		font-size: 32px;
+		font-weight: 300;
+		padding: 51px 0 40px 0;
+	}
+	.map form input{
+		border: 1px solid #fff;
+		background:rgba(255,255,255,.3);
+		width: 301px;
+		height: 44px;
+		margin-bottom: 8px;
+		color: #fff;
+		font-family: "PF Din Text Comp Pro - Thin";
+		font-size: 22px;
+		font-weight: 400;
+	}
+	.map form input::placeholder{
+		color: rgba(255,255,255,.8);
+		font-family: "PF Din Text Comp Pro - Thin";
+		font-size: 22px;
+		font-weight: 400;
+	}
+
+	.map textarea{
+		border: 1px solid #fff;
+		background:rgba(255,255,255,.3);
+		width: 301px;
+		height: 106px;
+		resize: none;
+		margin-bottom: 8px;
+		color: #fff;
+		font-family: "PF Din Text Comp Pro - Thin";
+		font-size: 22px;
+		font-weight: 400;
+	}
+	.map textarea::placeholder{
+		color: rgba(255,255,255,.8);
+		font-family: "PF Din Text Comp Pro - Thin";
+		font-size: 22px;
+		font-weight: 400;
+		padding-top: 10px;
+
+	}
+	.map button{
+		width: 150px;
+		height: 49px;
+		border-radius: 20px;
+		border: #fff solid 2px;
+		background: 0;
+		color: #ffffff;
+		font-family: "PF Din Text Comp Pro";
+		font-size: 22px;
+		font-weight: 500;
+	}
+/*footer*/
+	footer{
+		font-size: 0;
+
+	}
+	footer>ul{
+		display: inline-block;
+		vertical-align: top;
+		columns: 2;
+		column-gap: 40px;
+		margin-top: 58px;
+	}
+	footer>div{
+		display: inline-block;
+		
+	}
+	footer>div:last-child{
+		display: block;
+		margin: 0;
+	}
+	footer>ul+div{
+		margin: 50px 59px 0 77px;
+	}
+	footer>ul+div>ul{
+		
+	}
+	footer>div form{
+		min-width: 200px;
+		text-align: center;
+		/*position: relative;*/
+		background: #fff;
+		padding: 30px 28px 10px 23px; 
+		margin: 12px;
+	}
+	
+	footer>ul>li a{
+		text-decoration: none;
+		color: #7d7d7d;
+		font-family: "PF Din Text Comp Pro - Thin";
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 34px;
+	}
+	footer>div>h3{
+		color: #c8a674;
+		font-family: "PF Din Text Comp Pro";
+		font-size: 22px;
+		font-weight: 500;
+		line-height: 34px;	
+	}
+	footer>div>h3+ul{
+		color: #7d7d7d;
+		font-family: "PF Din Text Comp Pro - Thin";
+		font-size: 20px;
+		font-weight: 400;
+		width: 220px;
+		line-height: 26px;
+
+	}
+	footer>ul+div>ul>li{
+		margin-top: 20px;
+		padding-left: 38px;
+		position: relative;	
+	}
+	footer>ul+div>ul>li:first-child{
+		margin: 0;
+	}
+	footer>ul+div>ul>li:before{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 37px;
+		height: 35px;
+		background: url('images/sprites.png') 0 -69px;
+	}
+	footer>ul+div>ul>li+li:before{
+		background: url('images/sprites.png') 0 -2px;
+	}
+	footer>ul+div>ul>li+li+li:before{
+	background: url('images/sprites.png') no-repeat 0 -31px;
+	}
+	footer>div+.form{
+		display: inline-block;
+		margin-top: 41px;
+		vertical-align: top;
+		width: 324px;
+		height: 212px;
+		/*background: repeating-linear-gradient(45deg,#fff, #fff 5px,  #e63b2d 5px, #e63b2d 10px, #fff 10px, #fff 15px, #63bab0 15px, #63bab0 20px );*/
+		background: url('images/frame.png') 0 0 no-repeat;
+	}
+	footer form h3{
+		color: #67bbaf;
+		font-family: "PF Din Text Comp Pro";
+		font-size: 20px;
+		font-weight: 500;
+	/*	padding:30px 55px 20px 55px; */
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	footer input{
+		width: 248px;
+		height: 19px;
+		border: 0;
+		margin: 30px 0;
+		border-bottom: #ebebeb solid 1px;
+	}
+	
+	footer form input::placeholder{
+		color: #b1b1b1;
+		font-family: "PF Din Text Comp Pro - Thin";
+		font-size: 20px;
+		font-weight: 400;
+		text-align: center;
+		line-height: 30px;
+	}
+	footer button{
+		border: #b1b1b1 2px solid;
+		border-radius: 20px;
+		padding: 13px 23px 10px 22px;
+		color: #b1b1b1;
+		font-family: "PF Din Text Comp Pro";
+		font-size: 16px;
+		font-weight: 500;
+		/*margin: 27px 90px 22px 90px;*/
+		text-transform: uppercase;
+	}
+	footer .form+div>div{
+		color: #7d7d7d;
+		font-family: "PF Din Text Comp Pro - Thin";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		margin:18px 0 0 0; 
+		float: left;
+	}
+	footer .form+div:after{
+		content: '';
+		clear: both;
+		display: block;
+	}
+	footer>div>ul{
+		float: right;
+		margin-top: 13px;
+	}
+
+	footer>div+div>ul li{
+		display: inline-block;
+		margin-left: 10px;
+		
+	}
+	footer>div+div>ul li a{
+		display: block;
+		background: url('images/sprites.png') -44px -53px;
+		width: 49px;
+		height: 48px;
+	}
+	footer>div+div>ul li+li a{
+		background: url('images/sprites.png') -48px 0;
+		
+	}
+/*media*/
+	@media screen and (max-width: 480px){
+		.wrapper{
+			width: 100%;
+		}
+		.lang{
+			margin:0;
+		}
+		header>.wrapper>div>div{
+			float: left;
+			
+		}
+		header img{
+			width: 100px;
+		}
+		header>.wrapper>div>div a{
+			/*top: -50px;*/
+			right: auto;
+			left: -55px;
+		}
+		.contact{
+			display: none;
+		}
+		.slider{
+			display: none;
+		}
+		header nav ul{
+			float: right;
+			width: 70%;
+			margin-bottom: 15px;
+
+		}
+		
+		/*header nav ul a{
+			font-size: 35px;
+		}*/
+		body:before{
+			display: none;
+		}
+		body:after{
+			display: none;
+		}
+		.wrapper .wlcm>img{
+			display: none;
+
+		}
+		.wrapper .wlcm{
+			text-align: center;
+		}
+		.wlcm p{
+			width: auto;
+		}
+		.wlcm div>img{
+			width: 95%;
+		}
+		.contain .pro+div>div{
+			width: 100%;
+			/*background-size: 80%;*/ 
+			/*padding: 0;*/
+			/*background-clip: content-box;*/
+			background: 0;
+			padding: 0;
+		}
+		.contain .pro+div>div img{
+			width: 60%;
+		}
+		.prdct .book ul{
+			display: none;
+		}
+		.prdct>.book>div{
+			padding: 0;
+		}
+		.prdct .book .left{
+			width: 40%;
+			margin: 58px 0 0 64px;
+		}
+		.prdct .book .left img{
+			width: 100%;
+		}
+		.prdct .book ul+div{
+			background: 0;
+		}
+		.contain .pro+div p {
+			width: auto;
+			font-size: 22px;
+		}
+		.prdct .new{
+			margin:0;
+		}
+		.contain .pro li{
+			margin-left: 94px;
+		}
+		.contain .pro+div+div>div>div>div {
+			margin-right: 0;
+		}
+		.contain .pro li+li+li{
+		width: auto;
+			}
+		footer>ul{
+			columns: 1;
+			text-align: center;
+		}
+		footer>ul:after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+		footer>ul li{
+			float: left;
+			/*width: 20%;
+*/		}
+		footer>ul li a{
+			padding: 0 10px;
+		}
+		.contain .pro li:last-child{
+			margin-left:0;
+		}
+		footer>ul+div {
+			margin: 14px 59px 0 20px;
+		}
+		.map form{
+			width: 40%;
+			height: 300px;
+		}
+		.map{
+			height: 300px;
+		}
+		.map>div {
+			height: 300px;
+		}
+		.map form h2{
+			font-size: 15px;
+			padding: 20px 0;
+		}
+		.map form input{
+			width: 90%;
+			height: 8%;
+			font-size: 20px;
+		}
+		.map form textarea{
+			width: 90%;
+			height: 25%;
+			font-size: 20px;
+		}
+		.map form input::placeholder{
+			font-size: 20px;
+		}
+		.map form textarea::placeholder{
+			font-size: 20px;
+		}
+		.map button{
+			width: 70%;
+			height: 10%;
+			font-size: 15px;
+		}
+		footer input {
+			margin: 20px 0;
+			height: 19px;
+		}
+		footer button {
+			padding: 10px 16px 10px 16px;
+		}
+		/*.contain .pro ul{
+			text-align: center;
+		}*/
+		/*.contain>.pro>h2{
+			font-size: 25px;
+		}*/
+	}
